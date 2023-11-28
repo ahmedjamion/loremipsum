@@ -1,0 +1,22 @@
+.technologies-section{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 10px;
+}
+.technologies-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.technologies-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.technologies-indi-content{
+    padding: 10px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: lightblue;
+}

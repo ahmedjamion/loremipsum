@@ -1,0 +1,29 @@
+header{
+    position: fixed;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav ul{
+    display: flex;
+    column-gap: 20px;
+    list-style-type: none;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,16 @@
+.hero-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    padding-top: 60px;
+    align-items: center;
+}
+
+.get-started, .learn-more{
+    padding: 10px 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightblue;
+    background-color: lightcyan;
+    border-radius: 5px;
+}

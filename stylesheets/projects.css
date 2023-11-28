@@ -1,0 +1,36 @@
+.projects-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left center right";
+}
+
+.projects-title{
+    grid-area: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-content-1{
+    grid-area: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.projects-content-2{
+    grid-area: right;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.projects-indi-content{   
+    height: 300px;
+    padding: 10px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: lightblue;
+}
