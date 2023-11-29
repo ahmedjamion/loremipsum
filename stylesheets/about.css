@@ -1,15 +1,16 @@
 .about-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "left right";
+    padding-top: 60px;
 }
 
 .about-title{
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: right;
+
 }
-.about-content{
-    grid-area: left;
+
+.about-intro{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
