@@ -1,25 +1,23 @@
 .technologies-section{
-    padding: 120px;
+    padding: 10px;
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
 }
 .technologies-title{
-    display: grid;
-    align-items: flex-end;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 .technologies-content{
     display: grid;
-    justify-content: space-between;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
 .technologies-indi-content{
-    height: 430px;
-    width: 200px;
     padding: 10px;
-    background-color: lightcyan;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: lightblue;
+    background-color: rgb(220, 220, 220);
+}
+.technologies-content ul{
+    padding-left: 20px;
 }

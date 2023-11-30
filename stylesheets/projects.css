@@ -1,8 +1,8 @@
 .projects-section{
     display: grid;
-    grid-template-columns: 2fr 1.5fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "left center right";
-    padding: 60px;
+    padding: 10px
 }
 
 .projects-title{
@@ -12,7 +12,7 @@
     justify-content: center;
 }
 .projects-content-1{
-    padding: 120px;
+    padding-top: 60px;
     grid-area: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,7 +20,7 @@
 }
 
 .projects-content-2{
-    padding: 120px;
+    padding-top: 60px;
     grid-area: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,11 +28,6 @@
 }
 
 .projects-indi-content{   
-    height: 220px;
-    width: 200px;
     padding: 10px;
-    background-color: lightcyan;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: lightblue;
+    background-color: rgb(220, 220, 220);
 }

@@ -18,8 +18,5 @@
 .team-member{
     height: 300px;
     padding: 10px;
-    background-color: lightcyan;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: lightblue;
+    background-color: rgb(220, 220, 220);
 }

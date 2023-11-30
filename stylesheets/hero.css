@@ -1,35 +1,15 @@
 .hero-section{
-    background-image: url(/images/background-html.jpg);
-    background-size: cover;
-    color: white;
+    height: 100vh;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 90vh;
-    padding: 60px;
     align-items: center;
-}
-
-.intro{
-    width: 600px;
-}
-
-.hero-side{
-    display: flex;
-    align-items: center;
-}
-
-.hero-side-image{
-    height: 480px;
-    width: 480px;
-    object-fit: cover;
-    object-position: 60%;
-    border-radius: 50%;
 }
 
 .get-started, .learn-more{
-    border-style: solid;
-    border-width: 2px;
-    border-color: lightblue;
-    background-color: lightcyan;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 5pxrgb(85, 85, 85)
 }

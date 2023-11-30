@@ -1,6 +1,9 @@
 .main-footer{
+    height: 60px;
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(32, 32, 32);
+    color: white;
 }

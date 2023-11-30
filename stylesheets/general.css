@@ -1,42 +1,17 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 html{
-    font-family: Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth;
+    font-family: sans-serif;
+	scroll-behavior: smooth;
 }
 
 body{
-    margin: 0;
-    box-sizing: border-box;
-}
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-/*
-.hero-section{
-    background-color: lightgreen;
-}
-
-.services-section{
-    background-color: aqua;
-}
-
-.expertise-section{
-    background-color: aquamarine;
-}
-
-.technologies-section{
-    background-color: lightsalmon;
-}
-
-.projects-section{
-    background-color: lightpink;
-    margin-bottom: 0px;
-}
-
-.about-section{
-    background-color: azure;
-}
-
-.team-section{
-    background-color: lightskyblue;
+	background-color: rgb(176, 176, 176);
 }
