@@ -1,13 +1,32 @@
 .hero-section{
+    background-image: url(/images/background-html.jpg);
+    background-size: cover;
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
-    padding-top: 60px;
+    height: 90vh;
+    padding: 60px;
     align-items: center;
 }
 
+.intro{
+    width: 600px;
+}
+
+.hero-side{
+    display: flex;
+    align-items: center;
+}
+
+.hero-side-image{
+    height: 480px;
+    width: 480px;
+    object-fit: cover;
+    object-position: 60%;
+    border-radius: 50%;
+}
+
 .get-started, .learn-more{
-    padding: 10px 10px;
     border-style: solid;
     border-width: 2px;
     border-color: lightblue;

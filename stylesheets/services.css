@@ -1,5 +1,4 @@
 .services-section{
-    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -13,14 +12,16 @@
     justify-content: center;
 }
 .services-content{
-    padding-top: 60px;
+    padding: 120px;
     grid-area: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 10px;
 }
-.services-indi-content{   
+.services-indi-content{
+    height: 260px;
+    width: 240px;
     padding: 10px;
     background-color: lightcyan;
     border-radius: 20px;

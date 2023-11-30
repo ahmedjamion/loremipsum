@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 10px;
 }
 .expertise-title{
     display: flex;
@@ -10,11 +9,15 @@
     justify-content: center;
 }
 .expertise-content{
+    padding: 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
     gap: 10px;
 }
 .expertise-indi-content{
+    height: 260px;
+    width: 240px;
     padding: 10px;
     background-color: lightcyan;
     border-radius: 20px;
