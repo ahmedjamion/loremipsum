@@ -1,4 +1,5 @@
 .technologies-section{
+    height: 100vh;
     padding: 10px;
     display: grid;
     grid-template-rows: 1fr 2fr;
