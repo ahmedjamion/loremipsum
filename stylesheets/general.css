@@ -5,13 +5,57 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
 html{
-    font-family: sans-serif;
-	scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
-	background-color: rgb(176, 176, 176);
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.circuit-background{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -100;
+}
+/*
+.hero-section{
+    background-color: lightgreen;
+}
+
+.services-section{
+    background-color: aqua;
+}
+
+.expertise-section{
+    background-color: aquamarine;
+}
+
+.technologies-section{
+    background-color: lightsalmon;
+}
+
+.projects-section{
+    background-color: lightpink;
+    margin-bottom: 0px;
+}
+
+.about-section{
+    background-color: azure;
+}
+
+.team-section{
+    background-color: lightskyblue;
 }

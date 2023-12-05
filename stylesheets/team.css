@@ -1,23 +1,33 @@
 .team-section{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .team-title{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .team-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
 .team-member{
-    height: 300px;
     padding: 10px;
-    background-color: rgb(220, 220, 220);
+    height: 320px;
+    width: 280px;
+    background-color: lightgray;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
 }
