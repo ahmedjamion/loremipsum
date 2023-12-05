@@ -36,14 +36,16 @@ header{
 .header-nav ul li a{
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: 600;
 }
+
 
 @media(max-width: 800px){
     .menu-icon{
         display: flex;
     }
-    .header-nav{
+
+    .header-nav ul{
         display: none;
     }
 }
