@@ -1,5 +1,6 @@
 .services-section{
-    padding: 10px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;

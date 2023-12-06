@@ -39,7 +39,6 @@ header{
     font-weight: 600;
 }
 
-
 @media(max-width: 800px){
     .menu-icon{
         display: flex;

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding: 10px;
+    padding-bottom: 80px;
     gap: 10px;
 }
 .expertise-title{

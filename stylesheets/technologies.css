@@ -1,7 +1,7 @@
 .technologies-section{
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding: 10px;
+    padding-bottom: 80px;
 }
 .technologies-title{
     display: flex;
@@ -23,13 +23,46 @@
 }
 .technologies-indi-content{
     padding: 10px;
-    height: 280px;
+    height: 340px;
     width: 240px;
     background-color: lightgray;
     border-radius: 20px;
     border-style: solid;
     border-color: black;
     border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.technologies-indi-content h4{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.technologies-indi-content h3{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+
+.technologies-indi-content ul{
+    padding-left: 20px;
+}
+
+.technologies-indi-content .tech-icon-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.technologies-indi-content .tech-icon{
+    height: 40px;
 }
 
 @media(max-width: 1200px){
