@@ -25,7 +25,8 @@ header{
 
 .menu-icon{
     display: none;
-    height: 24px;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .header-nav ul{
