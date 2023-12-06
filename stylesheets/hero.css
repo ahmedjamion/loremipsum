@@ -74,6 +74,10 @@
     font-weight: 600;
 }
 
+.intro-links a{
+    text-decoration: none;
+}
+
 @media(max-width: 1200px){
     .hero-section{
         display: flex;
