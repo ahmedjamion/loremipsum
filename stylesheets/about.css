@@ -64,6 +64,7 @@
     max-width: 600px;
     gap: 20px;
     justify-content: center;
+    padding: 20px;
 }
 
 .our-vision-text h4{
@@ -97,6 +98,7 @@
     padding: 20px;
     max-width: 600px;
     gap: 20px;
+    padding: 20px;
 }
 
 .why-us-text ul{
@@ -110,7 +112,7 @@
 }
 
 .why-us-text ul{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .why-us-image{
@@ -133,6 +135,7 @@
     max-width: 800px;
     text-align: center;
     gap: 20px;
+    padding: 20px;
 }
 
 .promise h4{

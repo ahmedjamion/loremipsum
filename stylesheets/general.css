@@ -30,6 +30,25 @@ main{
     position: fixed;
     z-index: -100;
 }
+
+#backToTopBtn {
+    display: none; /* Initially hidden */
+    position: fixed;
+    height: 46px;
+    width: 46px;
+    bottom: 68px;
+    right: 8px;
+    padding: 10px;
+    background-color: lightgray;
+    color: #fff;
+    border: none;
+    border-radius: 23px;
+    cursor: pointer;
+  }
+
+  #backToTopBtn:hover {
+    background-color: #636363;
+  }
 /*
 .hero-section{
     background-color: lightgreen;

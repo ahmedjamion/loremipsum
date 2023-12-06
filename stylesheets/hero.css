@@ -92,16 +92,16 @@
     }
     
     .hero-section .intro h3{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .intro-links{
         max-width: 300px;
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .hero-section .intro p{
-        font-size: 12px;
+        font-size: 14px;
         max-width: 300px
     }
 
