@@ -198,6 +198,9 @@
         </div>
 
     </main>
+
+    <button id="backToTopBtn" onclick="scrollToTop()"><img src="icons/up.png" alt=""></button>
+    
     <footer class="main-footer">
         <div>
             <p>Lorem Ipsum IT Solutions</p>
@@ -212,6 +215,26 @@
         }
         function closemenu(){
             mobilenav.style.top = "-280px";
+        }
+
+        // Show or hide the "Back to Top" button based on the scroll position
+        window.onscroll = function() {
+        showBackToTopButton();
+        };
+
+        function showBackToTopButton() {
+        var btn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+        }
+
+        // Scroll to the top of the page when the button is clicked
+        function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
         }
 
     </script>
