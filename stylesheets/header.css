@@ -25,6 +25,7 @@ header{
 
 .menu-icon{
     display: none;
+    height: 24px;
 }
 
 .header-nav ul{

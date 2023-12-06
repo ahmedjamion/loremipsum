@@ -1,5 +1,5 @@
 .about-section{
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .about-title{
@@ -27,14 +27,24 @@
 .intro-text{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
     text-align: center;
-    justify-content: center;
     max-width: 600px;
+    padding: 20px;
+}
+
+.intro-image{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
 .intro-image img{
     width: 100%;
+    border-radius: 40px;
 }
 
 .our-vision{
@@ -43,12 +53,13 @@
     grid-template-areas: "left right";
 }
 
-.our-vision .our-vision-text{
+.our-vision-text{
     grid-area: right;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-self: center;
+    justify-self: center;
     text-align: center;
     max-width: 600px;
     gap: 20px;
@@ -62,11 +73,14 @@
 
 .our-vision .our-vision-image{
     grid-area: left;
+    padding: 40px;
 }
 
 .our-vision .our-vision-image img{
     width: 100%;
-    justify-self: end;
+    justify-self: center;
+    align-self: center;
+    border-radius: 40px;
 }
 
 .why-us{
@@ -77,10 +91,17 @@
 .why-us-text{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 20px;
     max-width: 600px;
     gap: 20px;
+}
+
+.why-us-text ul{
+    text-align: start;
+    line-height: 1.5em;
 }
 
 .why-us-text h4{
@@ -92,8 +113,13 @@
     padding-left: 40px;
 }
 
+.why-us-image{
+    padding: 40px;
+}
+
 .why-us-image img{
     width: 100%;
+    border-radius: 40px;
 }
 
 .promise{
@@ -110,7 +136,7 @@
 }
 
 .promise h4{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
 }
 
