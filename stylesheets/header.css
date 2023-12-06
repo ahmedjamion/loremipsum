@@ -40,6 +40,42 @@ header{
     font-weight: 600;
 }
 
+.mobile-nav{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    position: fixed;
+    top: -280px;
+    z-index: 2;
+    transition: top 0.5s;
+    text-align: center;
+}
+
+.mobile-nav img{
+    height: 16px;
+}
+
+.mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav ul li{
+    list-style: none;
+}
+
+.mobile-nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
 @media(max-width: 800px){
     .menu-icon{
         display: flex;

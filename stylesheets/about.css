@@ -148,6 +148,10 @@
     font-weight: 600;
 }
 
+.promise button a{
+    text-decoration: none;
+    color: black;
+}
 @media(max-width: 1200px){
     .about-intro{
         display: flex;

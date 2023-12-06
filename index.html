@@ -41,10 +41,33 @@
             </ul>
         </nav>
         
-        <img class="menu-icon" src="/icons/menu.png">
+        <img class="menu-icon" src="/icons/menu.png" onclick="openmenu()">
     </header>
 
     <main>
+        <nav id="mobilenav" class="mobile-nav">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#works">Works</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <img class="close" src="icons/close.png" onclick="closemenu()">
+                </li>
+            </ul>
+            
+        </nav>
         <section id="home" class="hero-section">
             <div class="intro">
                 <h2>
@@ -312,7 +335,10 @@
             
             <button>
                 <a href="contact.html" class="contact-button">Contact Us</a>
-            </button>        
+            </button> 
+            <button>
+                <a href="about.html" class="contact-button">Know More</a>
+            </button>         
     </div>
 
     </main>
@@ -322,5 +348,18 @@
             <p>Lorem Ipsum IT Solutions</p>
         </div>
     </footer>
+
+    <script>
+
+        var mobilenav = document.getElementById("mobilenav");
+
+        function openmenu(){
+            mobilenav.style.top = "0px";
+        }
+        function closemenu(){
+            mobilenav.style.top = "-280px";
+        }
+
+    </script>
 </body>
 </html>
