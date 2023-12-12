@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="icons/favicon-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="hero.css">
+</head>
+<body>
+    <div id="preloader">
+        <p>Lorem Ipsum IT Solutions</p>
+    </div>
+    <header>
+        <div class="header-logo">
+            <p>Lorem Ipsum IT Solutions</p>
+        </div>
+        
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#services">Services</a>
+                </li>
+                <li>
+                    <a href="index.html#works">Works</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <img class="menu-icon" src="icons/menu.png" onclick="openmenu()">
+        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=C2QZNpK5tQ68IhfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </header>
+    <main>
+        <button id="backToTopBtn" onclick="scrollToTop()"><img src="icons/up.png" alt="Top"></button>
+        <nav id="mobilenav" class="mobile-nav">
+            <ul>
+                <li>
+                    <a href="index.html#home">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#services">Services</a>
+                </li>
+                <li>
+                    <a href="index.html#works">Works</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <img class="close" src="icons/close.png" onclick="closemenu()">
+                </li>
+            </ul>
+        </nav>
+        <section id="about" class="about-section">
+            <section class="about-section-title show-animate">
+            <div class="about-title animate">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-intro animate">
+                <div class="intro-text">
+                    <h3 class="intro-title">Empowering You Through<br>Effortless Technology</h3>
+                    <p>
+                        Welcome to Lorem Ipsum IT Solutions, where we demystify technology, making it accessible and effortless for everyone.<br>Our mission is to simplify the digital landscape, providing user-friendly solutions that empower businesses through custom software development, web and mobile app design, cybersecurity services, and data analytics.
+                    </p>
+                </div>
+                <div class="intro-image animate">
+                    <img src="images/simplify.jpg" alt="">
+                </div>
+            </div>
+        </section>
+            <section class="vision show-animate">
+            <div class="our-vision animate">
+                <div class="our-vision-text">
+                    <h4 class="">Our Vision</h4>
+                    <p class="">
+                        At Lorem Ipsum IT Solutions, we envision a world where technology is intuitive, enabling businesses of all sizes to harness its power without complexity
+                    </p>
+    
+                    <h4 class="">Who We Are</h4>
+                    <p class="">
+                        We are the team behind Lorem Ipsum IT Solutions — a passionate group dedicated to making technology easy for everyone. Our diverse talents converge to create solutions that bridge the gap between innovation and simplicity.
+                    </p>
+                </div>
+                <div class="our-vision-image animate">
+                    <img src="images/team.jpg" alt="">
+                </div>
+
+            </div>
+
+        </section>
+            <section class="team-section animate">
+                <div class="team-title">
+                    <h2 class="animate">Meet Our Team</h2>
+                </div>
+                <div class="team-content">
+                    
+                    <div class="team-member animate">
+                        <img class="front-image" src="images/members/arjec.jpg">
+                        <img class="back-image" src="images/anonymous3.jpg">
+                        <h3>Arjec Jose Dizon<br>Chief Technology Officer (CTO)</h3>
+                        <p>Expertise: Custom Software Development</p>
+                        <p>
+                            Role: As the CTO, Arjec leads our talented team of developers, specializing in creating tailored software solutions using languages such as Java, Python, and JavaScript.
+                        </p>
+                        <div class="social-group">
+                            <img class="social-icon" src="icons/facebook.svg" alt="">
+                            <img class="social-icon" src="icons/linkedin.svg" alt="">
+                            <img class="social-icon" src="icons/github.svg" alt="">
+                            <img class="social-icon" src="icons/insta.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="team-member animate">
+                        <img class="front-image" src="images/members/marco.jpg" alt="">
+                        <img class="back-image" src="images/backend.jpg">
+                        <h3>Marco Jean Pagotaisidro<br>Chief Design Officer (CDO)</h3>
+                        <p>Expertise: Web and Mobile App Development, UI/UX Design</p>
+                        <p>
+                            Role: As the CDO, Marco oversees the design and development of user-friendly websites and mobile applications. He excels in creating engaging experiences with frameworks like React.js, Angular, and Vue.js.
+                        </p>
+                        <div class="social-group">
+                            <img class="social-icon" src="icons/facebook.svg" alt="">
+                            <img class="social-icon" src="icons/linkedin.svg" alt="">
+                            <img class="social-icon" src="icons/github.svg" alt="">
+                            <img class="social-icon" src="icons/insta.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="team-member animate">
+                        <img class="front-image" src="images/members/mark.jpg" alt="">
+                        <img class="back-image" src="images/fixer.jpg">
+                        <h3>Mark Laurenz Besira<br>Chief Security Officer (CSO)</h3>
+                        <p>Expertise: Cybersecurity Services</p>
+                        <p>
+                            Role: Mark, our CSO, is dedicated to keeping your digital assets secure. With expertise in endpoint protection, firewall solutions, and vulnerability scanning, he ensures the safety of your business.
+                        </p>
+                        <div class="social-group">
+                            <img class="social-icon" src="icons/facebook.svg" alt="">
+                            <img class="social-icon" src="icons/linkedin.svg" alt="">
+                            <img class="social-icon" src="icons/github.svg" alt="">
+                            <img class="social-icon" src="icons/insta.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="team-member animate">
+                        <img class="front-image" src="images/members/jamion.jpg" alt="">
+                        <img class="back-image" src="images/budi.jpg">
+                        <h3>Ahmed Rashad Jamion<br>Chief Data Officer (CDO)</h3>
+                        <p>
+                            Expertise: Data Analytics and Business Intelligence, Database Management
+                        </p>
+                        <p>
+                            Role: Ahmed, our CDO, specializes in turning data into insights. He leads our data analytics and business intelligence efforts, utilizing tools like Tableau, Power BI, and Apache Spark. Ahmed also oversees structured data management using SQL.
+                        </p>
+                        <div class="social-group">
+                            <img class="social-icon" src="icons/facebook.svg" alt="">
+                            <img class="social-icon" src="icons/linkedin.svg" alt="">
+                            <img class="social-icon" src="icons/github.svg" alt="">
+                            <img class="social-icon" src="icons/insta.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+                <section class="why-us-section show-animate">
+            <div class="why-us animate">
+                <div class="why-us-text">
+                    <h4 class="animate">Why Choose Us</h4>
+                    <ul>
+                        <li class="animate">
+                            User-Friendly Solutions: We specialize in crafting solutions that prioritize ease of use, ensuring that technology enhances, not hinders, your operations.
+                        </li>
+                        <li class="animate">
+                            Accessible Expertise: Whether you're a tech novice or a seasoned professional, our team is here to guide you through the journey, making technology accessible to all.
+                        </li>
+                        <li class="animate">
+                            Digital Security Made Simple: With a focus on straightforward cybersecurity solutions, we keep your digital assets secure without the unnecessary complexities.
+                        </li>
+                        <li class="animate">
+                            Insights, simplified: Through data analytics, we transform complex information into clear, actionable insights, guiding your business decisions effortlessly.
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-us-image animate">
+                    <img src="images/whyus.jpg" alt="">
+                </div>             
+            </div>     
+            </section>
+        </section>
+        
+        <div class="promise animate1">
+            <h4 class="animate">Our Promise</h4>
+            <p class="animate1">
+                At Lorem Ipsum IT Solutions, we promise to be your partner in navigating the digital landscape. We believe that technology should be an enabler, and we are committed to making it easy for you, regardless of your level of expertise.
+            </p>
+            <p class="animate1">
+                Join us at Lorem Ipsum IT Solutions — where we simplify technology, making it a tool for everyone to harness with confidence.
+            </p>
+            <a href="contact.html" class="inquire-text animate1" ><button class="custom-btn btn-5 animate1"><span>Inquire now</span></button></a>
+        </div>
+    </main>
+
+    
+    <footer class="main-footer">
+        <div>
+            <p class="footer-text">&copy; Lorem Ipsum IT Solutions</p>
+        </div>
+    </footer>
+    
+   
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var animatedElements = document.querySelectorAll('.animate1');
+
+        function checkScroll() {
+            animatedElements.forEach(function (element) {
+                if (element.classList.contains('services-section')) {
+                    // Apply slide-in effect to services-section
+                    if (isInViewport(element)) {
+                        element.classList.add('slide-in');
+                    } else {
+                        element.classList.remove('slide-in');
+                    }
+                } else {
+                    // Apply fade-in effect to other elements
+                    if (isInViewport(element)) {
+                        element.classList.add('fade-in');
+                    }
+                }
+            });
+        }
+
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Initial check on page load
+        checkScroll();
+
+        // Attach scroll event listener
+        window.addEventListener("scroll", checkScroll);
+    });
+
+    let sections = document.querySelectorAll('section');
+    window.onscroll = () => {
+        sections.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            
+            if(top >= offset && top < offset + height){
+                sec.classList.add('show-animate');
+            }
+            else{
+                sec.classList.remove('show-animate')
+            }
+        })
+    }
+
+        document.addEventListener("DOMContentLoaded", function () {
+  
+  
+var backToTopBtn = document.getElementById("backToTopBtn");
+
+  function showBackToTopButton() {
+    var scrollPosition =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (scrollPosition > 20) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  // Initial check on page load
+  showBackToTopButton();
+
+  // Attach scroll event listener
+  window.addEventListener("scroll", showBackToTopButton);
+
+  // Attach click event listener to the back-to-top button
+  backToTopBtn.addEventListener("click", scrollToTop);
+});
+
+
+    var mobilenav = document.getElementById("mobilenav");
+
+    function openmenu() {
+        mobilenav.style.top = "0px";
+    }
+
+    function closemenu() {
+        mobilenav.style.top = "-280px";
+    }
+</script>
+</body>
+</html>

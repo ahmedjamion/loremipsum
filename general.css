@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(42, 42, 42);
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+  /* general.css */
+
+.animate1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.animate1.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section{
+    overflow: hidden;
+}
+section .animate{
+    transition: .75s;
+}
+.hero-section .animate{
+    transform: scale(0);
+}
+.hero-section.show-animate .animate{
+    transform: scale(1);
+}
+.services-section .animate{
+    transform: scale(0);
+}
+.services-section.show-animate .animate{
+    transform: scale(1);
+}
+.expertise-section .animate{
+    transform: scale(0);
+}
+.expertise-section.show-animate .animate{
+    transform: scale(1);
+}
+.team-section .animate{
+    transform: scale(0);
+}
+.team-section.show-animate .animate{
+    transform: scale(1);
+}
+.technologies-section .animate{
+    transform: scale(0);
+}
+.technologies-section.show-animate .animate{
+    transform: scale(1);
+}
+.projects-section .animate{
+    transform: scale(0);
+}
+.projects-section.show-animate .animate{
+    transform: scale(1);
+}
+.vision .animate{
+    transform: scale(0);
+}
+.vision.show-animate .animate{
+    transform: scale(1);
+}
+.about-section-title .animate{
+    transform: scale(0);
+}
+.about-section-title.show-animate .animate{
+    transform: scale(1);
+}
+.why-us-section .animate{
+    transform: scale(0);
+}
+.why-us-section.show-animate .animate{
+    transform: scale(1);
+}
+.promise-section .animate{
+    transform: scale(0);
+}
+.promise-section.show-animate .animate{
+    transform: scale(1);
+}
+#preloader{
+    background: #fff url('images/loadingGif4.gif') no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#preloader p{
+    text-align: center;
+    padding: 140px;
+    font-weight: 600;
+    color: #3498db; /* Initial color */
+    animation: colorChange1 3s infinite alternate; /* Animation definition */
+}
+
+@keyframes colorChange1 {
+    0% {
+        color: #c6edff; /* Initial color */
+    }
+    100% {
+        color: #000e45; /* Final color */
+    }
+}
+
+iframe{
+    display: none;
+}
+
+#backToTopBtn {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 68px;
+    right: 8px;
+    padding: 10px;
+    background: linear-gradient(0deg, rgb(210, 232, 255)  0%, rgb(148, 201, 255) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 23px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    z-index: 100;
+  }
+
+  #backToTopBtn img{
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #backToTopBtn:hover {
+    background: linear-gradient(0deg, rgb(58, 143, 235)  0%, rgb(42, 132, 221) 100%);
+  }
+
+
+/*
+.hero-section{
+    background-color: lightgreen;
+}
+
+.services-section{
+    background-color: aqua;
+}
+
+.expertise-section{
+    background-color: aquamarine;
+}
+
+.technologies-section{
+    background-color: lightsalmon;
+}
+
+.projects-section{
+    background-color: lightpink;
+    margin-bottom: 0px;
+}
+
+.about-section{
+    background-color: azure;
+}
+
+.team-section{
+    background-color: lightskyblue;
+}
+*/
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

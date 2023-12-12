@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="icons/favicon-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+<div id="preloader">
+        <p>Lorem Ipsum IT Solutions</p>
+    </div>
+    
+    <header>
+        <div class="header-logo">
+            <p>Lorem Ipsum IT Solutions</p>
+        </div>
+
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#services">Services</a>
+                </li>
+                <li>
+                    <a href="index.html#works">Works</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI?si=C2QZNpK5tQ68IhfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </nav>
+        <img class="menu-icon" src="icons/menu.png" alt="Menu" onclick="openmenu()">
+    </header>
+    <main>
+        
+        <button id="backToTopBtn" onclick="scrollToTop()"><img src="icons/up.png" alt="Top"></button>
+        
+        <nav id="mobilenav" class="mobile-nav">
+            <ul>
+                <li>
+                    <a href="index.html#home">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#services">Services</a>
+                </li>
+                <li>
+                    <a href="index.html#works">Works</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <img class="close" src="icons/close.png" alt="Close" onclick="closemenu()">
+                </li>
+            </ul>
+        </nav>
+        <section class="contact-section">
+        <div class="contact-title">
+            <h1>Connect with Lorem Ipsum IT Solutions</h1>
+            <p>
+                Have questions or need assistance?<br>We're here to help!<br>Contact Lorem Ipsum IT Solutions for innovative solutions tailored to your needs.
+            </p>
+        </div>
+        
+        <div class="container">
+        
+            <form name="submit-to-google-sheet">
+                <h3>Leave us a message</h3>
+                <div class="contact-form">
+                    <div>
+                        <input type="text" name="Website URL" placeholder="Your company website">
+                        <input type="text" name="Company Name" placeholder="Your company name" required>
+                        <input type="text" name="First Name" placeholder="Your first name" required>
+                        <input type="text" name="Last Name" placeholder="Your last name" required>
+                    </div>
+                    <div>
+                        <input type="text" name="Phone" placeholder="Your phone number" required>
+                        <input type="email" name="Email" placeholder="Your email address" required>           
+                        <textarea name="Message" rows="4" placeholder="How can we help you?"></textarea>
+                    </div>
+               </div>
+               <div>
+                <button type="submit" class="submit-btn">
+                    <span class="submit-text">Submit</span>
+                    <img src="icons/icons8-check 1.svg" alt="">
+                        </button>
+                    <span id="msg"></span>
+                </div>
+               
+            </form>
+            
+        </div>
+
+    </section>
+    
+    </main>
+    
+
+    
+    
+    <footer class="main-footer">
+        <div>
+            <p class="footer-text">&copy; Lorem Ipsum IT Solutions</p>
+        </div>
+    </footer>
+    <!--
+        
+    -->
+
+    
+
+<script>
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxkYjuaeqsHec0VzZOOU8GqcYFGIPyrvw07KRQxSRgRascDCUiFIcXU23D2txu-nbJZ/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+
+
+        var mobilenav = document.getElementById("mobilenav");
+
+        function openmenu(){
+            mobilenav.style.top = "0px";
+        }
+        function closemenu(){
+            mobilenav.style.top = "-280px";
+        }
+
+        // Show or hide the "Back to Top" button based on the scroll position
+        window.onscroll = function() {
+        showBackToTopButton();
+        };
+
+        function showBackToTopButton() {
+        var btn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+        }
+
+        // Scroll to the top of the page when the button is clicked
+        function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+</script>
+
+</body>
+</html>
